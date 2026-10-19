@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProfile | Kristian Imanuel Powa</title>
+    
+    <!-- Font isi (Plus Jakarta Sans) dan judul (Merriweather) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="beranda">
+
+    <header>
+        <div class="logo">MyProfile</div>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li>
+                    <a href="https://www.dicoding.com/users/kristian9c1r265/academies" target="_blank" rel="noopener noreferrer">Profil Dicoding</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="card" id="tentang">
+            <h1>Tentang Saya</h1>
+            <p>
+                Saya adalah seorang siswa SMA yang memiliki ketertarikan besar di dunia teknologi, khususnya
+                pengembangan web (<em>web development</em>). Saat ini, saya meningkatkan keahlian pemrograman web
+                secara otodidak melalui platform freeCodeCamp, dan saya juga berencana mengikuti OSN Informatika.
+                Website ini dibuat sebagai Proyek Akhir untuk memenuhi kriteria kelulusan kelas dasar web.
+            </p>
+
+            <section>
+                <h2>Keahlian &amp; Hobi</h2>
+                <p>
+                    Saya sangat menyukai dunia teknologi, eksplorasi game, serta aktif dalam kegiatan lari dan
+                    olahraga untuk menjaga kesehatan.
+                </p>
+            </section>
+
+            <h2 class="section-title">Pencapaian &amp; Sertifikat</h2>
+            <div class="certificate-slots" aria-label="Pencapaian dan sertifikat">
+                <div class="certificate-slot">
+                    <img class="certificate-photo" src="img/sertiv_1.png" alt="Sertifikat pencapaian 1">
+                </div>
+                <div class="certificate-slot">
+                    <img class="certificate-photo" src="img/sertiv_2.png" alt="Sertifikat pencapaian 2">
+                </div>
+            </div>
+
+            <div class="profile-actions" aria-label="Profil sosial">
+                <a class="profile-cta" href="https://www.instagram.com/kristian_imanuel2?mdtx=Y2htYTQ1ZHRrajc1" target="_blank" rel="noopener noreferrer">Instagram Profile</a>
+                <a class="profile-cta" href="https://www.freecodecamp.org/kristianimanuel123" target="_blank" rel="noopener noreferrer">FreeCodeCamp Profile</a>
+            </div>
+        </article>
+
+        <aside class="sidebar">
+            <div class="profile-box">
+                <div class="portrait-fallback">
+                    <img class="uploaded-portrait" src="img/profile.jpeg" alt="profil Kristian Imanuel Powa">
+                </div>
+                <h3>Kristian Imanuel Powa</h3>
+                <p>Pelajar SMA / Web Developer Pemula</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="waktuSekarang">2026</span> Dibuat oleh Kristian Imanuel Powa.</p>
+    </footer>
+
+    <script>
+        document.getElementById("waktuSekarang").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
